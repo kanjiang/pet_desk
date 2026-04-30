@@ -1,0 +1,21 @@
+{
+  "string": [
+    { "name": "module_desc", "value": "PetDesk main entry module" },
+    { "name": "EntryAbility_desc", "value": "PetDesk main ability" },
+    { "name": "EntryAbility_label", "value": "PetDesk" },
+    { "name": "FormExtensionAbility_desc", "value": "PetDesk minimum desktop service card" },
+    { "name": "FormExtensionAbility_label", "value": "PetDesk 卡片" },
+    { "name": "perm_read_image_reason", "value": "用于选择宠物照片生成数字分身" },
+    { "name": "perm_health_reason", "value": "用于感知主人心情，让宠物在你需要时陪伴你" },
+    { "name": "home_title", "value": "我的宠物分身" },
+    { "name": "btn_pick_photo", "value": "选择宠物照片" },
+    { "name": "btn_play_ball", "value": "丢球" },
+    { "name": "btn_feed_bone", "value": "喂骨头" },
+    { "name": "btn_pet", "value": "撸一撸" },
+    { "name": "btn_sleep", "value": "去睡觉" },
+    { "name": "btn_scratch", "value": "抓抓板" },
+    { "name": "btn_play_toy", "value": "玩逗猫棒" },
+    { "name": "btn_sunbathe", "value": "晒太阳" },
+    { "name": "btn_stretch", "value": "伸懒腰" }
+  ]
+}

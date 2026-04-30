@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://petdesk.dev/schemas/SkinProfile.schema.json",
+  "title": "SkinProfile",
+  "description": "宠物外观档案 - 鸿蒙端、桌面端共用结构",
+  "type": "object",
+  "required": ["petId", "petName", "baseModelId", "palette", "createdAt", "updatedAt"],
+  "properties": {
+    "petId": { "type": "string" },
+    "petName": { "type": "string" },
+    "baseModelId": {
+      "type": "string",
+      "enum": [
+        "shorthair_cat",
+        "longhair_cat",
+        "shiba",
+        "golden_retriever",
+        "border_collie",
+        "rabbit_lop",
+        "hamster"
+      ]
+    },
+    "palette": {
+      "type": "object",
+      "required": ["primary", "secondary", "nose", "eyes"],
+      "properties": {
+        "primary": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "secondary": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "nose": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "eyes": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+      }
+    },
+    "patternMaskUri": { "type": "string" },
+    "sourcePhotos": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "createdAt": { "type": "integer", "minimum": 0 },
+    "updatedAt": { "type": "integer", "minimum": 0 }
+  }
+}

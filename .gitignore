@@ -1,0 +1,37 @@
+# HarmonyOS / DevEco Studio
+harmony/.idea/
+harmony/.hvigor/
+harmony/.cxx/
+harmony/build/
+harmony/oh_modules/
+harmony/**/oh_modules/
+harmony/**/build/
+harmony/**/.preview/
+harmony/local.properties
+harmony/hvigorw
+harmony/hvigorw.bat
+*.hsp
+*.hap
+
+# Node / Electron
+node_modules/
+desktop/dist/
+desktop/release/
+desktop/.vite/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# 用户测试照片 (隐私)
+shared/assets/sample-photos/*
+!shared/assets/sample-photos/.gitkeep

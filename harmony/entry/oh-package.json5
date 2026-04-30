@@ -1,0 +1,9 @@
+{
+  "name": "entry",
+  "version": "0.2.0",
+  "description": "PetDesk main entry HAP",
+  "main": "",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}

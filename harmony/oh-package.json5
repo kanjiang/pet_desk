@@ -1,0 +1,7 @@
+{
+  "modelVersion": "5.0.0",
+  "name": "petdesk",
+  "version": "0.2.0",
+  "description": "PetDesk monorepo root - HarmonyOS NEXT app",
+  "dependencies": {}
+}

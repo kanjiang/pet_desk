@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://petdesk.dev/schemas/DailySchedule.schema.json",
+  "title": "DailySchedule",
+  "description": "用户作息表 - cron-like 规则集",
+  "type": "object",
+  "required": ["rules", "createdAt", "updatedAt"],
+  "properties": {
+    "rules": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/ScheduleRule" }
+    },
+    "createdAt": { "type": "integer", "minimum": 0 },
+    "updatedAt": { "type": "integer", "minimum": 0 }
+  },
+  "$defs": {
+    "ScheduleRule": {
+      "type": "object",
+      "required": ["id", "hour", "minute", "action", "reason", "enabled", "weekdays"],
+      "properties": {
+        "id": { "type": "string" },
+        "hour": { "type": "integer", "minimum": 0, "maximum": 23 },
+        "minute": { "type": "integer", "minimum": 0, "maximum": 59 },
+        "action": { "type": "string" },
+        "reason": { "type": "string" },
+        "enabled": { "type": "boolean" },
+        "weekdays": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0, "maximum": 6 }
+        }
+      }
+    }
+  }
+}
